@@ -79,17 +79,17 @@
 
                     <p>
                         <label for="first-name">First Name *</label><br>
-                        <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" autocomplete="given-name" minlength="2" maxlength="30" pattern="[A-Za-z ]+" required>
+                        <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" minlength="2" maxlength="30" pattern="[A-Za-z ]+" required>
                     </p>
 
                     <p>
                         <label for="last-name">Last Name *</label><br>
-                        <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" autocomplete="family-name" minlength="2" maxlength="30" pattern="[A-Za-z ]+" required>
+                        <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" minlength="2" maxlength="30" pattern="[A-Za-z ]+" required>
                     </p>
 
                     <p>
                         <label for="date-of-birth">Date of Birth *</label><br>
-                        <input type="date" id="date-of-birth" name="date_of_birth" min="1980-01-01" max="2008-12-31" autocomplete="bday" required>
+                        <input type="date" id="date-of-birth" name="date_of_birth" min="1980-01-01" max="2008-12-31" required>
                     </p>
 
                     <p>
@@ -103,22 +103,22 @@
 
                     <p>
                         <label for="email-address">Email Address *</label><br>
-                        <input type="email" id="email-address" name="email_address" placeholder="example@gmail.com" autocomplete="email" required>
+                        <input type="email" id="email-address" name="email_address" placeholder="example@gmail.com" required>
                     </p>
 
                     <p>
                         <label for="reference-emails">Reference Emails</label><br>
-                        <input type="email" id="reference-emails" name="reference_emails" placeholder="first@example.com, second@example.com" size="40" multiple>
+                        <input type="email" id="reference-emails" name="reference_emails" placeholder="email@example.com" size="40" multiple>
                     </p>
 
                     <p>
                         <label for="phone-number">Phone Number *</label><br>
-                        <input type="tel" id="phone-number" name="phone_number" placeholder="03001234567" autocomplete="tel" maxlength="11" pattern="[0-9]{11}" required>
+                        <input type="tel" id="phone-number" name="phone_number" placeholder="03001234567" maxlength="11" pattern="[0-9]{11}" required>
                     </p>
 
                     <p>
                         <label for="home-address">Home Address *</label><br>
-                        <textarea id="home-address" name="home_address" rows="4" cols="40" placeholder="House number, street, city" autocomplete="street-address" minlength="10" maxlength="200" required></textarea>
+                        <textarea id="home-address" name="home_address" rows="4" cols="40" placeholder="House number, street, city" minlength="10" maxlength="200" required></textarea>
                     </p>
                 </fieldset>
 
@@ -137,7 +137,7 @@
 
                     <p>
                         <label for="main-skill">Main Skill *</label><br>
-                        <input type="text" id="main-skill" name="main_skill" list="skill-suggestions" placeholder="Start typing a skill" autocomplete="off" required>
+                        <input type="text" id="main-skill" name="main_skill" list="skill-suggestions" placeholder="Start typing a skill" required>
                         <datalist id="skill-suggestions">
                             <option value="HTML">
                             <option value="CSS">
@@ -155,7 +155,7 @@
 
                     <p>
                         <label for="portfolio-url">Portfolio URL</label><br>
-                        <input type="url" id="portfolio-url" name="portfolio_url" placeholder="https://www.yourportfolio.com" autocomplete="url" size="40">
+                        <input type="url" id="portfolio-url" name="portfolio_url" placeholder="https://www.yourportfolio.com" size="40">
                     </p>
 
                     <p>
@@ -169,6 +169,28 @@
                     </p>
 
                 </fieldset>
+
+                <fieldset>
+                    <legend>Terms and Conditions</legend>
+
+                    <ol>
+                        <li>All information given in this form must be correct.</li>
+                        <li>Bloomrix may cancel an application that contains false information.</li>
+                        <li>Selected interns must attend the interview at the chosen time.</li>
+                    </ol>
+
+                    <p>
+                        <input type="checkbox" id="terms-accepted" name="terms_accepted" value="accepted" required>
+                        <label for="terms-accepted">I have read and accept the terms and conditions *</label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Submit Application">
+                    <input type="reset" value="Reset Form">
+                    <input type="button" value="Check Eligibility">
+                    <input type="image" id="quick-apply" name="quick_apply" src="images/quick-apply.svg" alt="Quick Apply" width="140" height="40">
+                </p>
             </form>
         </section>
 
