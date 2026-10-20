@@ -60,6 +60,48 @@
 
         <hr>
 
+        <section id="application-form">
+            <h2>Application Form</h2>
+
+            <p>Fields marked with * are required.</p>
+
+            <form id="intern-application-form" method="get">
+
+                <fieldset>
+                    <legend>Applicant Details</legend>
+
+                    <input type="hidden" id="application-code" name="application_code" value="BLX-2026-0042">
+
+                    <p>
+                        <label for="applied-position">Applied Position</label><br>
+                        <input type="text" id="applied-position" name="applied_position" value="Web Development Intern" readonly>
+                    </p>
+
+                    <p>
+                        <label for="first-name">First Name *</label><br>
+                        <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" autocomplete="given-name" minlength="2" maxlength="30" pattern="[A-Za-z ]+" required>
+                    </p>
+
+                    <p>
+                        <label for="last-name">Last Name *</label><br>
+                        <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" autocomplete="family-name" minlength="2" maxlength="30" pattern="[A-Za-z ]+" required>
+                    </p>
+
+                    <p>
+                        <label for="date-of-birth">Date of Birth *</label><br>
+                        <input type="date" id="date-of-birth" name="date_of_birth" min="1980-01-01" max="2008-12-31" autocomplete="bday" required>
+                    </p>
+
+                    <p>
+                        <label for="national-id">National ID Number *</label><br>
+                        <input type="text" id="national-id" name="national_id" placeholder="12345-1234567-1" maxlength="15" pattern="[0-9]{5}-[0-9]{7}-[0-9]" required>
+                    </p>
+                </fieldset>
+
+            </form>
+        </section>
+
+        <hr>
     </main>
 
 </body>
