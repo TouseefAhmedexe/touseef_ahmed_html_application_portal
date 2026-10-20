@@ -129,7 +129,49 @@
                         <label for="interview-slot">Interview Date and Time (9:00 AM to 5:00 PM) *</label><br>
                         <input type="datetime-local" id="interview-slot" name="interview_slot" min="2026-11-02T09:00" max="2026-11-30T17:00" step="1800" required>
                     </p>
-                    
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Skills and Documents</legend>
+
+                    <p>
+                        <label for="main-skill">Main Skill *</label><br>
+                        <input type="text" id="main-skill" name="main_skill" list="skill-suggestions" placeholder="Start typing a skill" autocomplete="off" required>
+                        <datalist id="skill-suggestions">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="Python">
+                            <option value="C#">
+                            <option value="SQL">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="skill-rating">Skill Rating (1 to 5) *</label><br>
+                        <input type="number" id="skill-rating" name="skill_rating" min="1" max="5" step="1" value="3" required>
+                    </p>
+
+                    <p>
+                        <label for="portfolio-url">Portfolio URL</label><br>
+                        <input type="url" id="portfolio-url" name="portfolio_url" placeholder="https://www.yourportfolio.com" autocomplete="url" size="40">
+                    </p>
+
+                    <p>
+                        <label for="resume-file">Resume (PDF, DOC or DOCX) *</label><br>
+                        <input type="file" id="resume-file" name="resume_file" accept=".pdf,.doc,.docx" required>
+                    </p>
+
+                    <p>
+                        <label for="certificate-files">Certificates (PDF, JPG or PNG)</label><br>
+                        <input type="file" id="certificate-files" name="certificate_files" accept=".pdf,.jpg,.jpeg,.png" multiple>
+                    </p>
+
+                    <p>
+                        <label for="offer-letter">Signed Offer Letter (available after selection)</label><br>
+                        <input type="file" id="offer-letter" name="offer_letter" disabled>
+                    </p>
                 </fieldset>
             </form>
         </section>
