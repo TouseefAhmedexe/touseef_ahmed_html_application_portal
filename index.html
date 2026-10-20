@@ -233,6 +233,27 @@
         </section>
 
         <hr>
+
+        <section id="portal-extras">
+            <h2>Portal Map and Signature Area</h2>
+
+            <h3>Portal Map</h3>
+            <img id="portal-map-image" src="images/portal-map.svg" alt="Portal map with Form, Status and Notes areas" usemap="#portal-map" width="300" height="100">
+            <map name="portal-map">
+                <area shape="rect" coords="0,0,100,100" href="#application-form" alt="Application form">
+                <area shape="rect" coords="100,0,200,100" href="#application-status" alt="Application status">
+                <area shape="rect" coords="200,0,300,100" href="#language-notes" alt="Language notes">
+            </map>
+
+            <h3>Signature Area</h3>
+            <canvas id="signature-canvas" width="300" height="100">
+                Your browser does not support the canvas element.
+            </canvas>
+
+            <template id="skill-row-template">
+                <li>Skill name</li>
+            </template>
+        </section>
     </main>
 
 </body>

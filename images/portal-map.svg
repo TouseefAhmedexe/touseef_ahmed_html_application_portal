@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100">
+    <rect x="0" y="0" width="100" height="100" fill="#2f6fed" />
+    <rect x="100" y="0" width="100" height="100" fill="#1b4db3" />
+    <rect x="200" y="0" width="100" height="100" fill="#0f2f73" />
+    <text x="50" y="55" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffffff">Form</text>
+    <text x="150" y="55" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffffff">Status</text>
+    <text x="250" y="55" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffffff">Notes</text>
+</svg>
