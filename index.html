@@ -98,6 +98,29 @@
                     </p>
                 </fieldset>
 
+                <fieldset>
+                    <legend>Contact Details</legend>
+
+                    <p>
+                        <label for="email-address">Email Address *</label><br>
+                        <input type="email" id="email-address" name="email_address" placeholder="example@gmail.com" autocomplete="email" required>
+                    </p>
+
+                    <p>
+                        <label for="reference-emails">Reference Emails</label><br>
+                        <input type="email" id="reference-emails" name="reference_emails" placeholder="first@example.com, second@example.com" size="40" multiple>
+                    </p>
+
+                    <p>
+                        <label for="phone-number">Phone Number *</label><br>
+                        <input type="tel" id="phone-number" name="phone_number" placeholder="03001234567" autocomplete="tel" maxlength="11" pattern="[0-9]{11}" required>
+                    </p>
+
+                    <p>
+                        <label for="home-address">Home Address *</label><br>
+                        <textarea id="home-address" name="home_address" rows="4" cols="40" placeholder="House number, street, city" autocomplete="street-address" minlength="10" maxlength="200" required></textarea>
+                    </p>
+                </fieldset>
             </form>
         </section>
 
