@@ -65,7 +65,7 @@
 
             <p>Fields marked with * are required.</p>
 
-            <form id="intern-application-form" method="get">
+            <form id="intern-application-form" action="#" method="post" enctype="multipart/form-data">
 
                 <fieldset>
                     <legend>Applicant Details</legend>
@@ -75,6 +75,11 @@
                     <p>
                         <label for="applied-position">Applied Position</label><br>
                         <input type="text" id="applied-position" name="applied_position" value="Web Development Intern" readonly>
+                    </p>
+
+                    <p>
+                        <label for="intake-status">Current Intake Status</label><br>
+                        <input type="text" id="intake-status" name="intake_status" value="Fall 2026 Open" disabled>
                     </p>
 
                     <p>
@@ -129,7 +134,6 @@
                         <label for="interview-slot">Interview Date and Time (9:00 AM to 5:00 PM) *</label><br>
                         <input type="datetime-local" id="interview-slot" name="interview_slot" min="2026-11-02T09:00" max="2026-11-30T17:00" step="1800" required>
                     </p>
-
                 </fieldset>
 
                 <fieldset>
@@ -167,7 +171,6 @@
                         <label for="certificate-files">Certificates (PDF, JPG or PNG)</label><br>
                         <input type="file" id="certificate-files" name="certificate_files" accept=".pdf,.jpg,.jpeg,.png" multiple>
                     </p>
-
                 </fieldset>
 
                 <fieldset>
@@ -209,8 +212,17 @@
             <p>
                 <label for="skill-level-meter">Skill Level</label><br>
                 <meter id="skill-level-meter" min="0" max="5" low="2" high="4" optimum="5" value="3">3 out of 5</meter>
-                <output id="skill-result" name="skill_result" for="skill-level-meter">3 out of 5</output>
+                <output id="skill-result" name="skill_result" for="skill-rating">3 out of 5</output>
             </p>
+
+            <h3>Visual Progress Indicator</h3>
+            <canvas id="status-canvas" width="300" height="150">
+                Your browser does not support the HTML5 canvas tag. Current status progress: 50%.
+            </canvas>
+
+            <template id="status-row-template">
+                <li><span>Step Title</span>: <span>Status</span></li>
+            </template>
 
             <ol>
                 <li>Form submitted: Done</li>
@@ -243,7 +255,6 @@
                 <area shape="rect" coords="100,0,200,100" href="#application-status" alt="Application status">
                 <area shape="rect" coords="200,0,300,100" href="#language-notes" alt="Language notes">
             </map>
-
         </section>
     </main>
 
@@ -255,9 +266,13 @@
         <address>
             <strong>Touseef Ahmed</strong><br>
             Email: <a href="mailto:touseefahmed@gmail.com">touseefahmed@gmail.com</a><br>
-            Phone: <a href="tel:+9231XXXXXXXX">+92 31X XXXXXXX</a><br>
+            Phone: <a href="tel:+923125691991">+92 312 5691991</a><br>
             Rawalpindi, Pakistan
         </address>
+
+        <noscript>
+            <p><small>Note: Scripting is disabled. Interactive status updates require JavaScript.</small></p>
+        </noscript>
 
         <p><small>&copy; 2026 Touseef Ahmed</small></p>
     </footer>
